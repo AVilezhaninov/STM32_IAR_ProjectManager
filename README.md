@@ -13,6 +13,8 @@ Program capabilities:
 
 ## Requirements
 
+### Folder requirements
+
 Program works with next project's folder struct:
 - Project/
   - EWARM/
@@ -27,6 +29,10 @@ Program works with next project's folder struct:
 Project is the root folder. EWARM folder contains IAR EWARM files such as workspace file, project file
 and build files. Source folder contains user's files and other source files and folders.
 In source directory only CMSIS is mandatory folder.
+
+### Python requirements
+
+Program were written with Python 3.6.0 and has **LXML** dependencies.
 
 ---
 
