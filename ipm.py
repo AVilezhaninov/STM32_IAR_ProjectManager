@@ -508,7 +508,7 @@ def Clean(workspace_path):
             workspace_folder = "/".join(workspace_folder)
 
             for item in os.listdir(workspace_folder):
-                item_path = workspace_folder + item
+                item_path = workspace_folder + "/" + item
                 if os.path.isfile(item_path):
                     if not item.endswith(".eww") and not item.endswith(".ewp"):
                         try:
