@@ -1992,7 +1992,7 @@
       <name>src</name>
     </group>
     <file>
-      <name>$PROJ_DIR$\..\source\user\main.c</name>
+      <name>$PROJ_DIR$\..\source\main.c</name>
     </file>
   </group>
 </project>

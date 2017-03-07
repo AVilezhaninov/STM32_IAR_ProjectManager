@@ -228,14 +228,14 @@ def Create(project_name, project_device):
 
             # Copy main.c to project source folder
             shutil.copy2("./template/template_main.c",
-                         project_name + "/source/user")
+                         project_name + "/source")
             text_to_replace = '#include "stm32f4xx.h"'
             replace_text = '#include "stm32f' + project_device[6] + 'xx.h"'
-            ReplaceTextInFile(project_name + "/source/user/template_main.c",
+            ReplaceTextInFile(project_name + "/source/template_main.c",
                               text_to_replace, replace_text)
 
             # Rename template_main.c
-            rename_path = project_name + "/source/user"
+            rename_path = project_name + "/source"
             try:
                 os.rename(rename_path + "/template_main.c",
                           rename_path + "/main.c")
