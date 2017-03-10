@@ -5,7 +5,7 @@ for STM32F microconrollers with M0, M3, M4, M7 core (and other with same ST CMSI
 
 Program capabilities:
   - create new project with ST CMSIS files;
-  - add folder struct in existing project;
+  - add folder structure to existing project;
   - clean EWARM workspace folder;
   - rename existing workspace and project;
 
@@ -50,7 +50,7 @@ and type `ipm <command> <args> [-h | --help]` with next commands:
 | command | description |
 |---------|-------------|
 | create | Create new project |
-| add_folder | Copy folder to project and add folder in project file |
+| add_folder | Copy folder to project and add folder to project file |
 | clean | Clean workspace folder |
 | rename_workspace | Rename workspace |
 | rename_project | Rename project |
@@ -83,7 +83,7 @@ configure project to use STM32F407xx device.
 
 
 ### Add folder to project
-Copy folder to project source directory and add folder in project folder stucture.
+Copy folder to project source directory and add folder to project folder stucture.
 
 `ipm add_folder <project_path> <folder_path> [ignore] [-h | --help]`
 
@@ -100,7 +100,7 @@ extentions devided with "/" char (for example "-i c/h/cpp/icf/").
 `ipm add_folder -p Project_name/EWARM/project_name.ewp -f folder_to_add -i s/icf`
 
 will copy "folder_to_add" to project source directory and
-add this folder in project folder stucture except *.s and *.icf files.
+add this folder to project folder stucture except *.s and *.icf files.
 
 
 ### Clean project

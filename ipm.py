@@ -39,7 +39,7 @@ IPM - IAR Embedded Workbench project manager for STM32F M0, M3, M4, M7 MCU.
 
 Program capabilities:
   - create new project with standart ST CMSIS files;
-  - add folder struct in existing project;
+  - add folder struct to existing project;
   - clean EWARM workspace folder;
   - rename existing workspace and project;
 
@@ -47,7 +47,7 @@ usage: ipm <command> <args> [-h | --help]
 
 commands:
     create              Create new project
-    add_folder          Copy folder to project and add folder in project file
+    add_folder          Copy folder to project and add folder to project file
     clean               Clean workspace folder
     rename_workspace    Rename workspace
     rename_project      Rename project
@@ -73,7 +73,7 @@ standart ST CMSIS folder in the same folder and run program.
 '''
 
 ADD_FOLDER_HELP_MESSAGE = '''
-Copy folder to project source directory and ddd folder in project file.
+Copy folder to project source directory and ddd folder to project file.
 
 usage: ipm add_folder <project_path> <folder_path> [ignore] [-h | --help]
 
