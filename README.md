@@ -71,9 +71,9 @@ Create new IAR EWARM project with specified name and device.
 
 Device must be specified as in your "CMSIS/Device/ST/STM32Fxxx/Include/stm32fxxx.h".
 
-After project creation you only have to fix device defined symbol in
-IAR EWARM program (project options -> C/C++ compiler -> Preprocessor -> Defined symbols)
-to your exact device.
+After project creation you only have to fix:
+- processor variant in IAR EWARM program (project options -> General options -> Processor variant) to your exact device;
+- device defined symbol in IAR EWARM program (project options -> C/C++ compiler -> Preprocessor -> Defined symbols) to your exact device;
 
 #### Example
 `ipm create -n Project_name -d stm32f407xx`
